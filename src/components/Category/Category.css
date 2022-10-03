@@ -1,0 +1,32 @@
+.category{
+    width:30%;
+    border-radius:10px;
+    border:2px solid rgb(192, 143, 7);
+    margin: 1rem;
+    background-color: rgb(98, 107, 116);
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.categoryName{
+    color:green;
+    font-size: 2rem;
+}
+
+.CategoryLink{
+    text-decoration:none;
+    color:red;
+    font-size: 1.2rem;
+    position: absolute;
+    width:150px;
+    bottom: 0px;
+    left: 130px;
+}
+
+.CategoryLink:hover{
+    color:green;
+    background-color: rgb(53, 46, 43);
+    border-radius: 2px;
+}
+

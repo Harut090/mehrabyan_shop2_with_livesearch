@@ -1,0 +1,49 @@
+.categoryItem{
+    width:22%;
+    background-color: rgb(150, 147, 141);
+    border:  1px solid  rgb(128, 4, 0);
+    margin: 1rem;
+    background-color:rgb(75, 73, 73);
+    text-align:center;
+    border-radius:20px
+}
+
+.categoryItem img{
+    width:97%
+}
+
+.categoryItem h3{
+    font-size: 1rem;
+    color:white;
+}
+
+.categoryItem h3:hover{
+    color:green
+}
+
+.categoryItemLinks{
+    display:flex;
+    justify-content:space-around;
+    margin:10px 0
+}
+
+.categoryItemLinks a{
+    text-decoration:none;
+    color:white;
+}
+
+.categoryItemLinks a:hover{
+    color: green;
+}
+
+.categoryItemLinks button{
+    background-color:rgb(75, 73, 73);
+    border: none;
+    color: white;
+    font-size:0.8rem
+}
+
+.categoryItemLinks button:hover{
+    color: red;
+}
+

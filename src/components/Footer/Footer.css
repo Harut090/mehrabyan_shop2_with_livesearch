@@ -1,0 +1,17 @@
+.Footer{
+    width: 100%;
+    background-color:rgb(48, 47, 47);
+    align-items: center;
+    display: flex;
+    justify-content:space-around
+};
+
+.footerTitle{
+    color:white;
+    font-size: 4rem;
+}
+
+.Footer p{
+    color:rgb(73, 10, 10);
+    font-size:2rem;
+}

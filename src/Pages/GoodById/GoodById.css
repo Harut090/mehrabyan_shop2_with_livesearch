@@ -1,0 +1,30 @@
+.goodById{
+    background-color:grey;
+    width:100%;
+    margin: 1px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.goodById button{
+    border: none;
+    color: white;
+    background-color:grey;
+    margin: 30px;
+    font-size: 2rem;
+}
+
+.goodById button:hover{
+    color: red;
+}
+
+.goodById a{
+    text-decoration:none;
+    color: white;
+    margin: 30px;
+    font-size:2rem
+}
+
+.goodById a:hover{
+    color: green;
+}
