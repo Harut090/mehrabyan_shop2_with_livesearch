@@ -4,9 +4,11 @@ import { useState,useEffect } from "react";
 import { getFiltredCategories} from "../../api"
 import CategoryItem from "../CategoryItem";
 import "./CategoryGoods.css"
+import Form from "../Form";
 const CategoryGoods=()=>{
     const {name}=useParams();
     const [useCategory,setUseCategory] = useState([]);
+    const [filtredItems,setFiltredItems]=useState([]);
     useEffect(()=>{
         getFiltredCategories(name).then(data=>{
             setUseCategory(data.meals);
@@ -14,19 +16,27 @@ const CategoryGoods=()=>{
         })
     },[name])
 
+    const fil=(str)=>{
+        setFiltredItems(useCategory.filter(item=>{
+            return item.strMeal.toLowerCase().includes(str.toLowerCase());
+        }))
+    }
+    console.log(filtredItems)
     
 
     //console.log(name)
     return (
         <div className="category-goods">
-            {useCategory.map(item=>{
-                console.log(item)
+            <Form  fil={fil}/>
+            {filtredItems.length>0?filtredItems.map(item=>{
+               return (<CategoryItem item={item} key={item.idMeal}/>)
+            }):useCategory.map(item=>{
                 return (
                     <CategoryItem  item={item} key={item.idMeal}/>
                 )
             })}
-            hello categories
         </div>
     )
 }
 export default CategoryGoods
+

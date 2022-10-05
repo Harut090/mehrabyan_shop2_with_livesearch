@@ -1,0 +1,18 @@
+.form{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+.form input{
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    font-size:1rem;
+    background-color:grey;
+    color:white;
+}
+
+.form input::placeholder{
+    color: white;
+}
