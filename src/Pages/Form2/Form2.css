@@ -1,0 +1,49 @@
+.form2{
+    width: 28%;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    height:55px;
+    background-color:grey;
+    border-radius:15px;
+}
+
+.form2 input{
+    display: block;
+    position: relative;
+    top: 4px;
+    left:0px;
+    width: 95%;
+    height:36%;
+    border: none;
+    border-radius:10px;
+    background-color:white;
+    color: grey;
+}
+
+.form2 input::placeholder{
+    padding-left:10px
+}
+
+.form2 button{
+    background-color:grey;
+    color: white;
+    border: none;
+    border-radius:10px;
+}
+
+.form2 button:hover{
+    background-color:white;
+    color: grey;
+}
+
+
+
+
+ 
+
+
+
