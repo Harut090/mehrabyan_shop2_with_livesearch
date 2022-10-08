@@ -2,14 +2,20 @@
     width:22%;
     background-color: rgb(150, 147, 141);
     border:  1px solid  rgb(128, 4, 0);
-    margin: 1rem;
+    margin: 1rem 0.9rem;
     background-color:rgb(75, 73, 73);
     text-align:center;
     border-radius:20px
 }
 
+
+
 .categoryItem img{
     width:97%
+}
+
+.categoryItem .img{
+    opacity: 0.3;
 }
 
 .categoryItem h3{

@@ -1,5 +1,13 @@
-.category-goods{
+.categoryPage{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     background-color:rgb(105, 102, 102)
+}
+
+.category-goods{
+    width: 83%;
+    display: flex;
+    flex-wrap: wrap;
 }

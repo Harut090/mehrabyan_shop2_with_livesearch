@@ -2,11 +2,12 @@
     width:30%;
     border-radius:10px;
     border:2px solid rgb(192, 143, 7);
-    margin: 1rem;
+    margin: 1px;
     background-color: rgb(98, 107, 116);
     align-items: center;
     text-align: center;
     position: relative;
+    margin: 0.3rem;
 }
 
 .categoryName{
