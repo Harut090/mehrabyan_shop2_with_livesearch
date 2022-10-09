@@ -9,10 +9,8 @@ const CategoryList=({categoryList,addToBasket})=>{
     let pages=[];
 
     const showPage=(str)=>{
-        console.log(str);
-        let x=str*count;
-        console.log(x);
-        setPage(categoryList.slice(x,x+count))
+        let x=parseInt(str)*parseInt(count);
+        setPage(categoryList.slice(x,x+parseInt(count)))
     }
 
     
@@ -36,7 +34,9 @@ const CategoryList=({categoryList,addToBasket})=>{
                )
             }):""}
            </div>
-            <select className="select" key={new Date()} onClick={(e)=>{e.preventDefault();setCount(e.target.value)}}>
+            <select className="select" key={new Date()}
+             onChange={(e)=>{e.preventDefault();setCount(e.target.value)}}
+             value={count}>
                 <option value="3" key={new Date()/2}>3</option>
                 <option value="4" key={new Date()/3}>4</option>
                 <option value="7" key={new Date()/4}>7</option>

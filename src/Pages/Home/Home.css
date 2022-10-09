@@ -1,12 +1,10 @@
-
-
- .sort{
-    position: absolute;
-    z-index: 2000;
-    top:0.9rem;
-    right:33%;
-    color:white;
-    font-size:1.5rem;
-    background-color:grey;
-    border:none
- }
+.sort {
+   position: absolute;
+   z-index: 2000;
+   top: 0.9rem;
+   right: 33%;
+   color: white;
+   font-size: 1.5rem;
+   background-color: grey;
+   border: none
+}
